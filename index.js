@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-let audioStatus = 'stop'; // Initial status of the audio player
+let audioStatus = 'play'; // Initial status of the audio player
 let audioUrl = ''; // Initial URL of the audio
 
 app.post('/control', (req, res) => {
